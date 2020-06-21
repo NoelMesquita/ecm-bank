@@ -1,0 +1,37 @@
+<div class="container">
+
+    <div class="row box-cadastro">
+        
+        <div class="col-12">    
+            <p class="term" 
+                (mouseover)="alteraPosicaoDaTooltip($event.x, $event.y); exibeTooltip()" 
+                (mouseleave)="escondeTooltip()">DOM</p> 
+            <div class="tooltip" [class.visible]="visible" [style.left.px]="mouse.x" [style.top.px]="mouse.y">
+                <p>The Document Object Model (DOM) connects web pages to scripts or</p> 
+              <!-- programming languages by representing the structure of a document—such 
+              as the HTML representing a web page—in memory. Usually that means 
+              JavaScript, although modelling HTML, SVG, or XML documents as objects 
+              is not part of the JavaScript language, as such.</p> -->
+            </div>        
+            <h3 class="text-center">Você está a um passo de criar sua conta ECM Banking</h3>
+            <form class="mt-5" (ngSubmit)='cadastro()' [formGroup]='formCadastro'>
+                <div class="form-group">
+                    <input type="text" class="form-control cadastro" placeholder="Seu nome" formControlName="nome">
+                </div>
+                <div class="form-group">
+                    <input type="number" class="form-control cadastro" placeholder="Seu CPF" formControlName="cpf">
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control cadastro" placeholder="Seu melhor e-mail" formControlName="email">
+                </div>
+                <div class="form-group">
+                    <input type="tel" class="form-control cadastro" placeholder="Seu telefone" formControlName="telefone">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control cadastro" placeholder="Seu endereço" formControlName="endereco">
+                </div>
+                    <button type="submit" class="btn btn-cadastro btn-lg">Cadastrar</button>                   
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,48 @@
+.box-cadastro {
+    margin: 30px;
+    padding: 30px;
+}
+
+.cadastro {
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    border-radius: 0;
+    outline: none;
+    height: 50px;
+}
+
+.btn-cadastro {
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #dcbc81;
+    font-weight: bold;
+}
+
+.tooltip {
+    background-color: #444;
+    border: 1px solid #333;
+    border-radius: 8px;
+    color: #fff;
+    display: none;
+    max-width: 500px;
+    padding: 10px 15px;
+    position: absolute;
+  }
+   
+.tooltip p {
+    font: 14px/1.6 "Helvetica Neue", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+   
+.visible {
+    display: inline-block;
+  }
+   
+.term {
+    cursor: pointer;
+    display: inline-block;
+  }
